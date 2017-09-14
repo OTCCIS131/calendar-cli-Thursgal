@@ -32,9 +32,9 @@ for (let month of range.by('month')) {
         return _.padEnd(date, 2, ' ');
     })
 
-    switch(month.day()) {
-        
-    } // End of switch
+    for (i = 0; i < month.day(); i++) {
+        paddedDays.unshift('  ');
+    }
 
     console.log("S   M   T   W   Th  F   S");
     paddedDays = _.chunk(paddedDays, 7);
