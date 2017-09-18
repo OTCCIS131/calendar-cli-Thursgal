@@ -14,8 +14,6 @@ var daysArray = [];
 var date = moment();
 var range = date.range('year');
 
-let dow=['S', 'M', 'T', 'W', 'Th', 'F', 'S'];
-
 for (let month of range.by('month')) {
     console.log(_.pad(month.format('MMMM'), 26, '-'));
 
